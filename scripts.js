@@ -1,6 +1,5 @@
-window.onload = function () {
-    var sp = document.getElementById("sp");
-    var currDate = new Date().getDay();
-    sp.innerHTML = sp.innerHTML + "<br />The current day is: " + currDate;
-}
+$(document).ready(function() {
+    var currDate = moment().format('dddd');
+    $("#sp").append("<br />The current day is: " + currDate);
+});
 
