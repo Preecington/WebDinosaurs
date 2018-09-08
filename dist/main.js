@@ -1487,10 +1487,11 @@ eval("module.exports = function(module) {\r\n\tif (!module.webpackPolyfill) {\r\
 /*!********************!*\
   !*** ./scripts.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\nvar moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\r\n\r\n$(document).ready(function() {\r\n    var currDate = moment().format('dddd');\r\n    $(\"#sp\").append(\"<br />The current day is: \" + currDate);\r\n});\r\n\r\n\n\n//# sourceURL=webpack:///./scripts.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);\n\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {\n  var currDate = moment__WEBPACK_IMPORTED_MODULE_1___default()().format('dddd');\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()(\"#sp\").append(\"<br />The current day is: \".concat(currDate));\n});\n\n//# sourceURL=webpack:///./scripts.js?");
 
 /***/ })
 
