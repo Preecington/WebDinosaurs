@@ -1,21 +1,21 @@
 // webpack.config.js
 module.exports = {
     mode: 'development',
-    entry: './scripts.js',
+    entry: './scripts.ts',
     output: {
         filename: 'main.js',
         publicPath: 'dist'
     },
+    resolve: {
+      extensions: [".ts", ".js"]
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(j|t)s$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
+                    loader: 'awesome-typescript-loader'
                 }
             }
         ]

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./scripts.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./scripts.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1483,15 +1483,15 @@ eval("module.exports = function(module) {\r\n\tif (!module.webpackPolyfill) {\r\
 
 /***/ }),
 
-/***/ "./scripts.js":
+/***/ "./scripts.ts":
 /*!********************!*\
-  !*** ./scripts.js ***!
+  !*** ./scripts.ts ***!
   \********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);\n\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {\n  var currDate = moment__WEBPACK_IMPORTED_MODULE_1___default()().format('dddd');\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()(\"#sp\").append(\"<br />The current day is: \".concat(currDate));\n});\n\n//# sourceURL=webpack:///./scripts.js?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst jquery_1 = __importDefault(__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\"));\r\nconst moment_1 = __importDefault(__webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\"));\r\njquery_1.default(document).ready(function () {\r\n    var currDate = moment_1.default().format('dddd');\r\n    jquery_1.default(\"#sp\").append(`<br />The current day is: ${currDate}`);\r\n});\r\n\n\n//# sourceURL=webpack:///./scripts.ts?");
 
 /***/ })
 
